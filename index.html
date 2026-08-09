@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manisha Chettri | Video Editor</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+        }
+
+        .section-title {
+            font-size: 35px;
+            margin-bottom: 30px;
+            color: #38bdf8;
+        }
+
+        .about p {
+            max-width: 800px;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 15px 25px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+        }
+
+        .project h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #cbd5e1;
+        }
+
+        .education-box {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 700px;
+        }
+
+        .education-box h3 {
+            color: #38bdf8;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            color: #cbd5e1;
+        }
+
+        .contact a {
+            color: #38bdf8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>Manisha</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <section class="hero" id="home">
+
+        <h1>Hello, I'm <span>Manisha Chettri</span></h1>
+
+        <h2>Video Editor</h2>
+
+        <p>
+            I am a creative and motivated professional interested in
+            video editing and web development. I enjoy creating engaging
+            digital content and learning new technologies.
+        </p>
+
+        <a class="btn" href="#contact">Contact Me</a>
+
+    </section>
+
+
+    <section class="about" id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+            I am Manisha Chettri, a BCA graduate with an interest in
+            video editing and web development. I enjoy working on creative
+            projects, developing websites and improving my technical skills.
+            I am currently looking for opportunities where I can learn,
+            contribute and grow professionally.
+        </p>
+
+    </section>
+
+
+    <section id="skills">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">Video Editing</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">PHP</div>
+            <div class="skill">WordPress</div>
+            <div class="skill">WooCommerce</div>
+
+        </div>
+
+    </section>
+
+
+    <section id="projects">
+
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+
+                <h3>Savy Fashion</h3>
+
+                <p>
+                    An e-commerce fashion website developed using
+                    WordPress and WooCommerce. The project focuses on
+                    creating an online shopping experience for fashion
+                    products.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>The Momento</h3>
+
+                <p>
+                    An e-commerce website for gifts with separate
+                    sections for men and women. The project was developed
+                    using HTML, CSS, JavaScript and PHP.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Video Editing Portfolio</h3>
+
+                <p>
+                    A collection of creative video editing work showcasing
+                    my ability to create engaging and visually appealing
+                    content.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="education">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-box">
+
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+
+            <p>
+                Gian Jyoti Institute of Management and Technology
+            </p>
+
+            <p>
+                Phase 2, Mohali
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact" id="contact">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <p>
+            📧 Email:
+            <a href="mailto:manishachettri133@gmail.com">
+                manishachettri133@gmail.com
+            </a>
+        </p>
+
+        <p>
+            I am open to video editing, web development and internship
+            opportunities.
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 Manisha Chettri. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>
